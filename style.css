@@ -1,0 +1,141 @@
+body{
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+}
+.first{
+    height: 100vh;
+    
+}
+/*********Nav-bar********/
+
+.header{
+    padding: 15px;
+    background: #FFFFFF;
+box-shadow: 0px 0px 0px rgba(0, 0, 0, 1);
+z-index: 5;
+}
+
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-link{
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#000000;
+    margin: 0 30px;
+    font-size: 22px;
+}
+.nav-link:first-child{
+    margin-left: 50px;
+    color: #DCA7CA;
+}
+.nav-socials{
+    display: flex;
+}
+.nav-socials a{
+    text-decoration: none;
+    width: 40px;
+    margin: 0 30px;
+}
+.nav-socials a:last-child{
+    margin-right: 50px;
+}
+.nav-socials i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+
+#facebook{
+    color: #D7BECF;
+    border-color: #D7BECF;
+}
+#instagram{
+    color: #8CC0D0;
+    border-color: #8CC0D0;
+}
+
+#email{
+    color: #DCA7CA;
+    border-color: #DCA7CA;
+}
+
+/*********Intro********/
+.intro{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background: url('/AboutImg/Fundal.png') center no-repeat;
+   background-size: cover;
+  
+  
+    position: relative;
+    overflow: hidden;
+}
+.intro-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.intro-text{
+    text-align: center;
+    margin-top: -15%;
+    margin-left: 20%;
+}
+h1{
+    font-weight: normal;
+font-size: 100px;
+text-transform: uppercase;
+color: #FFFFFF;
+text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+}
+.intro-image{
+    position: absolute;
+    top: 0;
+    right: -10%;
+    width: 48%;
+    height: auto;
+}
+.intro-description{
+    font-size: 36px;
+color: #AF87A3;
+margin-bottom: 50px;
+
+}
+.intro-button{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+font-size: 27px;
+letter-spacing: 0.055em;
+color: #E4C2D9;
+background: linear-gradient(167.32deg, #FFFFFF 9.19%, #e6e1e1 97.71%);
+-webkit-box-shadow: -4px 100px 72px -46px rgba(0,0,0,0.61);
+-moz-box-shadow: -4px 100px 72px -46px rgba(0,0,0,0.61);
+box-shadow: 0px 15px 50px -20px rgba(0,0,0,0.61);
+
+border-radius: 63px;
+padding: 10px 40px;
+
+
+}
