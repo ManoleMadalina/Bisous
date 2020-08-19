@@ -14,57 +14,77 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYc3rRsiTc7fNU69NOHQ6BLWto-HTFcZc"
+    ></script>
     <title>Bisous</title>
   </head>
   <body>
+    <div class="main">
     <section class="first">
       <!--Nav-bar-->
-      <header class="header">
+      <header class="header" id="header">
         <div class="header-inner">
           <div class="nav-bar">
             <a href="#" class="nav-link">
               <i class="fas fa-home"></i>
             </a>
-            <a href="#" class="nav-link">Despre noi</a>
+            <a href="#about" class="nav-link">Despre noi</a>
             <a href="#" class="nav-link">Produse</a>
             <a href="#" class="nav-link">Contact</a>
           </div>
+          <!--Burger-menu-->
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+
           <div class="nav-socials">
-            <a href="#"><i class="fab fa-facebook-f" id="facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram" id="instagram"></i></a>
-            <a href="#"><i class="fas fa-at" id="email"></i></a>
+            <a class="color1" href="#"
+              ><i class="fab fa-facebook-f" id="facebook"></i
+            ></a>
+            <a class="color2" href="#"
+              ><i class="fab fa-instagram" id="instagram"></i
+            ></a>
+            <a class="color3" href="#"><i class="fas fa-at" id="email"></i></a>
           </div>
         </div>
       </header>
 
       <!--Intro-->
-      <section class="intro">
+      <section class="intro" id="intro">
         <div class="intro-inner">
           <div class="intro-text">
-            <h1>Bine ai venit</h1>
-            <p class="intro-description">
-              La Bisous, iti facem viata mai dulce!
+            <h1 class="anim" data-delay="0s">Bine ai venit</h1>
+            <p class="intro-description anim" data-delay=".5s">
+              La Bisous, îți facem viața mai dulce!
             </p>
-            <a href="#" class="intro-button">Produse</a>
+            <a href="#" class="intro-button anim" data-delay=".7s">Produse</a>
           </div>
+          <img class="intro-image" src="AboutImg/Tarta.png" alt="tarta" />
         </div>
+        
         <!--/.intro-inner-->
-        <img class="intro-image" src="AboutImg/Tarta.png" alt="tarta" />
-      </section>
+        
+      </section><!--/.intro-->
     </section>
     <!--/.first-->
 
     <!--DESPRE NOI-->
-    <section class="about">
+    <section id="about" class="about">
       <div class="about-inner">
         <div class="about-text">
           <h2><span>D</span>ESPRE NOI</h2>
-          <p class="about-description">
-            La patiseria Bisous gatim cu multa iubire pentru a va indulci viata.
-            Va punem la dispozitie o gama larga de produse pentru a savura cat
-            mai multe nuante ale gustului.
+          <p class="about-description anim" data-delay=".2s">
+            La patiseria Bisous gătim cu multă iubire pentru a vă îndulci viața.
+            Vă punem la dispoziție o gamă largă de produse pentru a savura cât
+            mai multe nuanțe ale gustului. </br>
+            Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Alias, molestiae.
           </p>
-          <p class="about-line">Va invitam sa ne cunoasteti mai bine!</p>
+          <p class="about-line">Vă invităm să ne cunoașteți mai bine!</p>
         </div>
         <!--/.about-text-->
         <img src="AboutImg/Macarons.png" alt="macarons" class="about-image" />
@@ -75,25 +95,30 @@
 
     <!--VIDEO-->
     <section class="video">
-      <iframe
-        width="750"
-        height="500"
-        src="https://www.youtube.com/embed/y8Yv4pnO7qc"
-        frameborder="0"
-      ></iframe>
+      <div class="video-inner">
+        <iframe
+          width="750"
+          height="550"
+          src="https://www.youtube.com/watch?v=7xvmA4L4ZDo&t=698s"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
     </section>
     <!--/.video-->
 
     <!--PRODUSE-->
     <section class="products">
-      <div class="produscts inner">
+      <div class="products-inner">
         <div class="products-header">
           <h2><span>P</span>RODUSELE NOASTRE</h2>
-          <a href="#" class="products-button">Vezi toate produsele</a>
+          <a href="#" class="products-button"
+            >Vezi toate produsele<i class="fas fa-chevron-right"></i
+          ></a>
         </div>
         <!--/.products-header-->
         <div class="products-categories">
-          <div class="product-category">
+          <div class="product-category category-animation anim" data-delay="0s">
             <img
               class="product-icon"
               src="AboutImg/Tart-icon.png"
@@ -102,7 +127,7 @@
             <p class="product-name">Tarte</p>
           </div>
 
-          <div class="product-category">
+          <div class="product-category category-animation anim" data-delay="0s">
             <img
               class="product-icon"
               src="AboutImg/Prajitura-icon.png"
@@ -111,7 +136,7 @@
             <p class="product-name">Prăjituri</p>
           </div>
 
-          <div class="product-category">
+          <div class="product-category category-animation anim" data-delay="0s">
             <img
               class="product-icon"
               src="AboutImg/Cupcake-icon.png"
@@ -120,7 +145,7 @@
             <p class="product-name">Cupcakes</p>
           </div>
 
-          <div class="product-category">
+          <div class="product-category category-animation anim" data-delay="0s">
             <img
               class="product-icon"
               src="AboutImg/Macarons-icon.png"
@@ -129,7 +154,7 @@
             <p class="product-name">Macarons</p>
           </div>
 
-          <div class="product-category">
+          <div class="product-category category-animation anim" data-delay="0s">
             <img
               class="product-icon"
               src="AboutImg/Viennoise-icon.png"
@@ -138,7 +163,7 @@
             <p class="product-name">Viennoise</p>
           </div>
 
-          <div class="product-category">
+          <div class="product-category category-animation anim" data-delay="0s">
             <img
               class="product-icon"
               src="AboutImg/Biscuiti-icon.png"
@@ -147,7 +172,7 @@
             <p class="product-name">Biscuiți</p>
           </div>
 
-          <div class="product-category">
+          <div class="product-category category-animation anim" data-delay="0s">
             <img
               class="product-icon"
               src="AboutImg/Eclere-icon.png"
@@ -156,7 +181,7 @@
             <p class="product-name">Eclere</p>
           </div>
 
-          <div class="product-category">
+          <div class="product-category category-animation anim" data-delay="0s">
             <img
               class="product-icon"
               src="AboutImg/Cheesecake-icon.png"
@@ -165,7 +190,7 @@
             <p class="product-name">Cheesecake</p>
           </div>
 
-          <div class="product-category">
+          <div class="product-category category-animation anim" data-delay="0s">
             <img
               class="product-icon"
               src="AboutImg/Quiche-icon.png"
@@ -221,5 +246,140 @@
       </div>
       <!--/.products-inner-->
     </section>
+
+    <section class="bottom-wrapper">
+      <!--CONTACT-->
+      <section class="contact">
+        <div class="contact-inner">
+          <h2><span>N</span>e găsești la adresa:</h2>
+          <div class="contact-info">
+            <div class="contact-text">
+              <div class="contact-categories">
+                <div class="contact-line">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <p class="contact-address">str.31 august, 5-of.312</p>
+                </div>
+
+                <div class="contact-line">
+                  <i class="fas fa-phone"></i>
+                  <p class="contact-address">060938240</p>
+                </div>
+
+                <div class="contact-line">
+                  <i class="fas fa-at"></i>
+                  <p class="contact-address">bisous.pastry@gmail.com</p>
+                </div>
+              </div>
+              <!--/.contact-categories-->
+
+              <div class="contact-details">
+                <p class="contact-detail">
+                  La Bisous nu se realizează livrări. Pentru a ridica un produs,
+                  este necesară prezența Dumneavoastră în sediul nostru.
+                </p>
+                <p class="contact-detail">
+                  De asemenea, preluăm comenzi pentru torte și alte produse
+                  personalizate.
+                </p>
+              </div>
+            </div>
+            <!--/.contact-text-->
+
+            <div class="contact-map">
+              <iframe
+                src="https://snazzymaps.com/embed/253388"
+                width="760px"
+                height="460px"
+                style="border: none;"
+              ></iframe>
+            </div>
+          </div>
+          <!--/.contact-info-->
+        </div>
+        <!--/.contact-inner-->
+      </section>
+
+      <section class="footer">
+        <div class="footer-inner">
+          <div class="footer-column1">
+            <div class="footer-logo">
+              <img src="AboutImg/Logo.png" alt="bisous logo" />
+            </div>
+            <p class="footer-copyrights">© 2020 Bisous.All rights reserved</p>
+          </div>
+
+          <div class="footer-column2">
+            <p class="footer-text">Ține legătura cu noi</p>
+            <div class="footer-links">
+              <div class="footer-links-column">
+                <div class="footer-line">
+                  <a class="footer-icon color1" href="#"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <p class="footer-social">bisous.pastry</p>
+                </div>
+
+                <div class="footer-line">
+                  <a class="footer-icon color2" href="#"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <p class="footer-social">Bisous Pastry</p>
+                </div>
+              </div>
+              <!--/.footer-links-column-->
+
+              <div class="footer-links-column">
+                <div class="footer-line">
+                  <a class="footer-icon color2" href="mailto: bisous@gmail.com"
+                    ><i class="fas fa-at"></i
+                  ></a>
+                  <p class="footer-social">Scrie-ne!</p>
+                </div>
+
+                <div class="footer-line">
+                  <a class="footer-icon color1" href="#"
+                    ><i class="fas fa-phone"></i
+                  ></a>
+                  <p class="footer-social">Sună-ne!</p>
+                </div>
+              </div>
+              <!--/.footer-links-column-->
+            </div>
+            <!--/.footer-links-->
+          </div>
+          <!--/.footer-column2-->
+
+          <div class="footer-column3">
+            <div class="footer-menu-line">
+              <a href="#about" class="footer-menu">Despre noi</a>
+              <div class="footer-menu-image">
+                <img src="AboutImg/Macaron1.png" alt="macaron" />
+              </div>
+            </div>
+
+            <div class="footer-menu-line">
+              <a href="#" class="footer-menu">Produse</a>
+              <div class="footer-menu-image">
+                <img src="AboutImg/Macaron1.png" alt="macaron" />
+              </div>
+            </div>
+
+            <div class="footer-menu-line">
+              <a href="#" class="footer-menu">Contact</a>
+              <div class="footer-menu-image">
+                <img src="AboutImg/Macaron1.png" alt="macaron" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/.footer-inner-->
+      </section>
+    </section>
+
+    <!--Scroll To Top Button-->
+    <button id="btnScrollToTop"><i class="fas fa-chevron-up"></i></button>
+  </div>
+    <script src="app.js"></script>
+    <script src="app1.js"></script>
   </body>
 </html>
