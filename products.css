@@ -303,8 +303,12 @@ h1 {
 }
 .products-image {
   position: absolute;
+  left: 50px;
+}
+.cheesecake-position {
   left: 0;
 }
+
 h2 {
   margin: 0 auto;
   color: white;
