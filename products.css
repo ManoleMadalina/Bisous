@@ -9,19 +9,11 @@ body {
   margin: 0;
 }
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
@@ -75,7 +67,7 @@ p {
   bottom: 0;
   width: 100%;
   height: 0;
-  background: linear-gradient(144.6deg, #efa9f1 2.5%, #b27ed4 126.36%);
+  background: linear-gradient(90deg, #de9ae0 0%, #eec5e0 100%);
   border-radius: 0;
   z-index: -1;
   transition: 0.8s;
@@ -168,13 +160,12 @@ p {
   color: #dca7ca;
 }
 
-.nav-socials a:hover #facebook,
-.nav-socials a:hover #instagram,
-.nav-socials a:hover #email {
+.nav-socials a:hover #facebook, .nav-socials a:hover #instagram, .nav-socials a:hover #email {
   color: #ffffff;
 }
 
 /*****INTRO******/
+
 .intro {
   display: flex;
   justify-content: center;
@@ -185,12 +176,14 @@ p {
   animation: image 10s infinite alternate;
   margin-bottom: 30px;
 }
+
 .intro-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 h1 {
   text-transform: uppercase;
   font-family: "Castellar", sans-serif;
@@ -200,6 +193,7 @@ h1 {
   padding: 0.1em 0.3em;
   background: rgba(94, 73, 73, 0.39);
 }
+
 .intro-categories {
   display: flex;
   align-items: center;
@@ -207,6 +201,7 @@ h1 {
   transform: translateY(9em);
   flex-wrap: wrap;
 }
+
 .intro-category {
   display: flex;
   flex-direction: column;
@@ -220,9 +215,11 @@ h1 {
   position: relative;
   overflow: hidden;
 }
+
 .intro-category.active {
   background-color: #eca1d2;
 }
+
 .intro-category::before {
   content: "";
   position: absolute;
@@ -236,6 +233,7 @@ h1 {
   transition: 0.9s;
   z-index: 0;
 }
+
 .intro-category:hover::before {
   transform: translate3d(0, -10px, 0);
 }
@@ -246,15 +244,19 @@ h1 {
   transition: 0.6s;
   max-width: 100%;
 }
+
 .intro-icon.no-margin {
   margin-top: 0.5em;
 }
+
 .intro-icon.more-margin {
   margin-top: 2.2em;
 }
+
 .intro-category:hover .intro-icon {
   transform: rotateY(165deg);
 }
+
 .intro-name {
   font-size: 18px;
   z-index: 1;
@@ -276,35 +278,37 @@ h1 {
 }
 
 /*****PRODUCTS******/
+
 .products {
   display: none;
   margin: 20px 0;
   opacity: 0;
 }
+
 .products.active {
   display: block;
 }
+
 .products-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .products-header {
   width: 100%;
   height: 100px;
   display: flex;
   align-items: center;
-  background: linear-gradient(
-    176.8deg,
-    #e4c1d9 2.65%,
-    rgba(252, 202, 235, 0.71) 115.57%
-  );
+  background: linear-gradient( 176.8deg, #e4c1d9 2.65%, rgba(252, 202, 235, 0.71) 115.57%);
   position: relative;
 }
+
 .products-image {
   position: absolute;
   left: 50px;
 }
+
 .cheesecake-position {
   left: 0;
 }
@@ -317,6 +321,7 @@ h2 {
   font-weight: normal;
   text-transform: uppercase;
 }
+
 .products-quote {
   font-size: 30px;
   width: 50%;
@@ -333,6 +338,7 @@ h2 {
   background: #fce7ff;
   padding: 40px 0 40px;
 }
+
 .products-items {
   display: flex;
   align-items: center;
@@ -340,6 +346,7 @@ h2 {
   flex-wrap: wrap;
   width: 90%;
 }
+
 .product-item {
   display: flex;
   align-items: center;
@@ -351,9 +358,11 @@ h2 {
   padding: 0 10px 15px 0;
   transition: 0.4s;
 }
+
 .product-item:hover {
   transform: scale(1.1);
 }
+
 .product-column1 {
   display: flex;
   flex-direction: column;
@@ -362,13 +371,16 @@ h2 {
   width: 48%;
   height: 95%;
 }
+
 .product-column2 {
   margin-left: 10px;
   width: auto;
 }
+
 .position-tarta {
   transform: translateX(-6%);
 }
+
 .product-image {
   width: 90%;
   height: 90%;
@@ -384,6 +396,7 @@ h2 {
   box-shadow: 0px 16px 15px -13px rgba(213, 156, 227, 0.64);
   border-radius: 28px;
 }
+
 h3 {
   font-weight: normal;
   font-size: 28px;
@@ -391,16 +404,19 @@ h3 {
   color: #2e2a2a;
   line-height: 125%;
 }
+
 .product-ingredients {
   font-size: 20px;
   line-height: 34px;
   color: #1c1919;
 }
+
 .product-ingredients span {
   font-weight: normal;
   font-size: 21px;
   color: #9b4b9c;
 }
+
 @keyframes productsFade {
   from {
     transform: translateY(-30px);
@@ -418,23 +434,28 @@ h3 {
 }
 
 /******CONTACT********/
+
 .contact {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 50px 0;
 }
+
 .contact-inner {
   text-align: center;
 }
+
 .contact-logo {
   text-align: center;
 }
+
 .contact-logo img {
   max-width: 100%;
   width: 200px;
   height: auto;
 }
+
 .contact-text {
   font-size: 32px;
   text-align: center;
@@ -442,17 +463,16 @@ h3 {
   width: 60%;
   margin: 30px auto;
 }
+
 .contact-button {
   font-weight: 500;
   font-size: 23px;
   text-align: center;
-
   padding: 0.6em 1em;
   background: linear-gradient(180deg, #ffffff 0%, #f7f5f5 100%);
   border: 0.5px solid #e2d6e2;
   box-sizing: border-box;
-  box-shadow: 0px 18px 28px -23px rgba(0, 0, 0, 0.28),
-    inset 1px 2px 10px -4px rgba(84, 79, 79, 0.25);
+  box-shadow: 0px 18px 28px -23px rgba(0, 0, 0, 0.28), inset 1px 2px 10px -4px rgba(84, 79, 79, 0.25);
   border-radius: 35px;
   margin-top: 15px;
   transition: 0.4s;
@@ -466,6 +486,7 @@ h3 {
   text-decoration: none;
   color: #ca91bc;
 }
+
 .contact-button:hover {
   transform: scale(1.1);
 }
