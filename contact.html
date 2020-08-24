@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="contact.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <!--Nav-bar-->
+    <header class="header" id="header">
+      <div class="header-inner">
+        <div class="nav-bar">
+          <a href="index.html" class="nav-link">
+            <i class="fas fa-home"></i>
+          </a>
+          <a href="index.html" class="nav-link">Despre noi</a>
+          <a href="products.html" class="nav-link">Produse</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+        <!--Burger-menu-->
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+
+        <div class="nav-socials">
+          <a class="color1" href="#"
+            ><i class="fab fa-facebook-f" id="facebook"></i
+          ></a>
+          <a class="color2" href="#"
+            ><i class="fab fa-instagram" id="instagram"></i
+          ></a>
+          <a class="color3" href="#"><i class="fas fa-at" id="email"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <!--CONTACT-->
+    <section class="contact">
+      <div class="contact-inner">
+        <div class="contact-column1">
+          <div class="contact-image">
+            <img src="ContactImg/Image.png" alt="tarta cu afine" />
+          </div>
+          <div class="contact-text">
+            <h2><span>N</span>e găsești la adresa:</h2>
+            <div class="contact-categories">
+              <div class="contact-line">
+                <i class="fas fa-map-marker-alt"></i>
+                <p class="contact-address">str.31 august, 5-of.312</p>
+              </div>
+
+              <div class="contact-line">
+                <i class="fas fa-phone"></i>
+                <p class="contact-address">060938240</p>
+              </div>
+
+              <div class="contact-line">
+                <i class="fas fa-at"></i>
+                <p class="contact-address">bisous.pastry@gmail.com</p>
+              </div>
+            </div>
+            <!--/.contact-categories-->
+            <div class="contact-details">
+              <p class="contact-detail">
+                La Bisous nu se realizează livrări. Pentru a ridica un produs,
+                este necesară prezența Dumneavoastră în sediul nostru.
+              </p>
+              <p class="contact-detail">
+                De asemenea, preluăm comenzi pentru torte și alte produse
+                personalizate.
+              </p>
+            </div>
+            <p class="contact-copyrights">© 2020 Bisous.All rights reserved</p>
+          </div>
+          <!--/.contact-text-->
+        </div>
+        <!--/.contact-column1-->
+
+        <div class="contact-column2">
+          <form action="" class="contact-form">
+            <h2 class="contact-title">Contactează-ne</h2>
+            <p class="contact-sentence">
+              Completați acest formular, iar noi vă contactăm cât mai curând
+              posibil!
+            </p>
+            
+            <div class="form-inputs">
+                <div class="input">
+            <input id="name" type="text" name="name" required />
+            <label class="contact-label" for="name"><span>Nume complet</span></label></div></br>
+            <div class="input">
+            <input id="phone" type="text" name="phone" required />
+            <label class="contact-label" for="phone"><span>Telefon de contact</span></label></div></br>
+            <div class="input">
+            <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="12" required
+          ></textarea>
+            <label class="contact-label" for="message"><span>Mesaj</span></label></div></br>
+            
+            <div class="button-wrapper">
+            <button class="contact-button">TRIMITE</button></div>
+        </div>
+          </form>
+        </div>
+        <!--/.contact-column2-->
+      </div>
+      <!--/.contact-inner-->
+    </section>
+  </body>
+</html>
