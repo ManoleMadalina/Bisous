@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6, p {
   height: 3px;
   background-color: #dca7ca;
   margin: 5px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .nav-socials {
@@ -215,6 +215,11 @@ h1 {
   margin-bottom: 50px;
 }
 
+.wrapper:hover {
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
 .intro-button {
   text-transform: uppercase;
   text-decoration: none;
@@ -228,12 +233,6 @@ h1 {
   box-shadow: 0px 15px 50px -20px rgba(0, 0, 0, 0.61);
   border-radius: 63px;
   padding: 10px 40px;
-  transition: 0.2s;
-}
-
-.intro-button:hover {
-  color: #dd9bc8;
-  text-shadow: 0px 0px 25px rgb(231, 153, 231);
 }
 
 .anim {
@@ -581,12 +580,12 @@ h2 span {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .footer-icon i {
   font-size: 23px;
-  transition: .15s;
+  transition: 0.15s;
 }
 
 .footer-icon.color1 {
@@ -658,7 +657,7 @@ h2 span {
   background-color: #a377a6;
   bottom: 0;
   left: 0;
-  transition: width .4s linear;
+  transition: width 0.4s linear;
 }
 
 .footer-menu:hover::after {
@@ -678,7 +677,7 @@ h2 span {
   color: white;
   outline: none;
   cursor: pointer;
-  transition: background .2s linear;
+  transition: background 0.2s linear;
 }
 
 #btnScrollToTop:hover {
@@ -695,7 +694,7 @@ h2 span {
 
 /*iPPad Pro*/
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
   .intro {
     align-items: unset;
     background: url("AboutImg/Fundal2.png") center no-repeat;
@@ -747,7 +746,6 @@ h2 span {
     border: none;
     color: white;
   }
-  .products-button i {}
   .products-categories {
     margin: 40px 0;
     width: 100%;
@@ -786,7 +784,7 @@ h2 span {
 
 /*iPad*/
 
-@media screen and (max-width:812px) {
+@media screen and (max-width: 812px) {
   .main {
     position: relative;
     overflow-x: hidden;
@@ -807,7 +805,7 @@ h2 span {
     align-items: center;
     justify-content: center;
     transform: translateX(100%);
-    transition: transform .5s ease-in;
+    transition: transform 0.5s ease-in;
   }
   .nav-link {
     margin: 2em auto;
@@ -882,7 +880,7 @@ h2 span {
 
 /*Phone*/
 
-@media screen and (max-width:450px) {
+@media screen and (max-width: 450px) {
   .nav-bar {
     top: 53px;
   }
@@ -932,7 +930,7 @@ h2 span {
     font-size: 14px;
   }
   .products-categories {
-    background: url('AboutImg/BcgProduse.png') center no-repeat;
+    background: url("AboutImg/BcgProduse.png") center no-repeat;
     background-size: cover;
   }
   .products-header h2 {
@@ -982,13 +980,13 @@ h2 span {
   }
 }
 
-@media screen and (max-height:450px) {
+@media screen and (max-height: 450px) {
   h1 {
     font-size: 50px;
   }
   .nav-link {
     font-size: 22px;
-    margin: .5em;
+    margin: 0.5em;
   }
   .intro-description {
     font-size: 25px;
