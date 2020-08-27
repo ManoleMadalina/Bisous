@@ -411,6 +411,11 @@ h2 span {
   height: 320px;
   background: rgba(241, 209, 230, 0.8);
   margin: 15px;
+  transition: .3s;
+}
+
+.product-category:hover {
+  background: rgba(238, 171, 215, 0.8);
 }
 
 /*.category-animation {
@@ -883,6 +888,8 @@ h2 span {
 @media screen and (max-width: 450px) {
   .nav-bar {
     top: 53px;
+    width: 100vw;
+    background-color: #f8e0fddc;
   }
   .nav-socials a {
     width: 30px;
