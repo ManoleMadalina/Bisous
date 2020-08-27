@@ -222,6 +222,9 @@ h1 {
   position: relative;
   overflow: hidden;
 }
+.intro-category.anim {
+  opacity: 0;
+}
 
 .intro-category.active {
   background-color: #eca1d2;
