@@ -222,9 +222,7 @@ h1 {
   position: relative;
   overflow: hidden;
 }
-.intro-category.anim {
-  opacity: 0;
-}
+
 
 .intro-category.active {
   background-color: #eca1d2;
@@ -379,7 +377,9 @@ h2 {
   padding: 0 10px 15px 0;
   transition: 0.4s;
 }
-
+.product-item.anim {
+  opacity: 0;
+}
 .product-item:hover {
   transform: scale(1.1);
 }
