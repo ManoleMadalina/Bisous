@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6, p {
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: #dca7ca;
+  background-color: #ffffff;
   margin: 5px;
   transition: all 0.3s ease;
 }
@@ -194,6 +194,13 @@ h1 {
   background: rgba(94, 73, 73, 0.39);
 }
 
+.intro-select {
+  font-size: 35px;
+  color: rgb(78, 78, 78);
+  transform: translateY(4.3em);
+  font-weight: 500;
+}
+
 .intro-categories {
   display: flex;
   align-items: center;
@@ -277,11 +284,22 @@ h1 {
   }
 }
 
+@keyframes anim1 {
+  from {
+    transform: translateX(-80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 /*****PRODUCTS******/
 
 .products {
   display: none;
-  margin: 20px 0;
+  margin: 5em 0;
   opacity: 0;
 }
 
@@ -386,6 +404,11 @@ h2 {
   height: 90%;
 }
 
+.product-image img {
+  height: 195px;
+  width: auto;
+}
+
 .product-price {
   font-size: 18px;
   font-weight: 600;
@@ -395,6 +418,10 @@ h2 {
   background: linear-gradient(180deg, #ebaefb 0%, #dd7ff4 142.86%);
   box-shadow: 0px 16px 15px -13px rgba(213, 156, 227, 0.64);
   border-radius: 28px;
+}
+
+.product-price.mobile {
+  display: none;
 }
 
 h3 {
@@ -636,4 +663,306 @@ h3 {
 
 .footer-menu:hover::after {
   width: 100%;
+}
+
+#btnScrollToTop {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #8cc0d0;
+  box-shadow: 0px 0px 10px rgba(77, 70, 70, 0.25);
+  color: white;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.2s linear;
+}
+
+#btnScrollToTop:hover {
+  background-color: #7cb4c5;
+}
+
+#btnScrollToTop:active {
+  background-color: #6d9dac;
+}
+
+#btnScrollToTop i {
+  font-size: 18px;
+}
+
+/*ipad Pro*/
+
+@media screen and (max-width:1024px) {
+  .intro {
+    height: 60vh;
+    margin-bottom: 0;
+  }
+  .intro-select {
+    color: white;
+    text-shadow: 1px 3px 5px #564f4f;
+  }
+  .products-items {
+    width: 100%;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  .product-item {
+    width: 45%;
+  }
+  .product-image img {
+    width: 170px;
+    height: auto;
+  }
+  .footer-inner {
+    padding: 20px 50px;
+  }
+  .footer-column1 {
+    width: 20%;
+  }
+  .footer-column2 {
+    width: fit-content;
+  }
+  .footer-column3 {
+    width: unset;
+  }
+  .footer-menu-image {
+    width: 95px;
+  }
+  .footer-menu-image img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 812px) {
+  .main {
+    position: relative;
+    overflow-x: hidden;
+  }
+  .header-inner {
+    flex-direction: row-reverse;
+  }
+  .nav-bar {
+    position: absolute;
+    right: 0px;
+    height: 98vh;
+    width: 50vw;
+    top: 64px;
+    background-color: #f8e0fd;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-link {
+    margin: 2em auto;
+    opacity: 0;
+    font-size: 25px;
+  }
+  .nav-link:first-child {
+    margin: 0;
+  }
+  .burger {
+    display: block;
+    margin-right: 30px;
+    cursor: pointer;
+  }
+  .intro {
+    height: 78vh;
+  }
+  h1 {
+    transform: translateY(1em);
+    background-color: #eed1dd5c;
+    width: 80%;
+    text-align: center;
+  }
+  .intro-category {
+    width: 125px;
+    margin: 7px;
+  }
+  .products-image {
+    left: 15px;
+    width: 240px;
+  }
+  .smaller-width {
+    width: 210px;
+  }
+  .products-image img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+  .cheesecake-position {
+    left: 0;
+  }
+  h2 {
+    font-size: 45px;
+  }
+  .products-quote {
+    width: 70%;
+  }
+  .product-item {
+    width: 80%;
+    padding: 12px;
+  }
+  h3 {
+    font-size: 26px;
+    margin-bottom: 7px;
+  }
+  .contact-text {
+    width: 80%;
+  }
+  .footer-column3 {
+    display: none;
+  }
+}
+
+.nav-active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media screen and (max-width: 450px) {
+  .nav-bar {
+    top: 53px;
+    width: 100vw;
+    background-color: #f8e0fddc;
+  }
+  .nav-socials a {
+    width: 30px;
+    height: 30px;
+  }
+  .nav-socials i {
+    font-size: 18px;
+  }
+  .intro {
+    height: fit-content;
+  }
+  h1 {
+    font-size: 40px;
+    transform: translateY(3.1em);
+  }
+  .intro-categories {
+    transform: translateY(9.3em);
+  }
+  .intro-category {
+    width: 105px;
+    height: 110px;
+    margin: 5px;
+    border-radius: 8px;
+  }
+  .intro-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.1em;
+  }
+  .intro-icon img {
+    max-width: 100%;
+    width: 80%;
+  }
+  .intro-name {
+    font-size: 16px;
+  }
+  .products {
+    margin-top: 12em;
+  }
+  .products-image {
+    display: none;
+  }
+  .products-quote {
+    font-size: 24px;
+    width: 90%;
+  }
+  .product-item {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .product-column1 {
+    width: 60%;
+  }
+  .product-image {
+    width: unset;
+  }
+  .product-image img {
+    width: unset;
+  }
+  .product-price.pc {
+    display: none;
+  }
+  .product-price.mobile {
+    display: inline-block;
+    margin: 7px 0;
+    /*padding: 0.2em 2.7em;*/
+  }
+  .position-tarta {
+    transform: translateX(0);
+  }
+  .product-column2 {
+    margin-left: 0;
+    text-align: center;
+  }
+  .contact-text {
+    font-size: 24px;
+  }
+  .contact-button {
+    margin-top: 0;
+  }
+  .contact-button a {
+    font-size: 21px;
+  }
+  .footer-inner {
+    flex-direction: column-reverse;
+    padding: 20px 15px;
+  }
+  .footer-column1 {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-column2 {
+    width: 100%;
+  }
+  .footer-text {
+    margin-bottom: 15px;
+  }
+  .footer-line {
+    margin: 18px 10px;
+  }
+  .footer-social {
+    font-size: 16px;
+    margin-left: 8px;
+  }
+  .footer-logo {
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+  }
 }
