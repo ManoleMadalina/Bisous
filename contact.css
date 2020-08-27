@@ -9,19 +9,11 @@ body {
   margin: 0;
 }
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
@@ -168,9 +160,7 @@ p {
   color: #dca7ca;
 }
 
-.nav-socials a:hover #facebook,
-.nav-socials a:hover #instagram,
-.nav-socials a:hover #email {
+.nav-socials a:hover #facebook, .nav-socials a:hover #instagram, .nav-socials a:hover #email {
   color: #ffffff;
 }
 
@@ -302,14 +292,12 @@ label span {
   transition: all 0.3s ease;
 }
 
-input,
-textarea {
+input, textarea {
   width: 100%;
   font-size: 18px;
 }
 
-input,
-textarea {
+input, textarea {
   height: 100%;
   padding-top: 35px;
   border: none;
@@ -318,27 +306,23 @@ textarea {
   outline: none;
 }
 
-.input input:focus + label span,
-.input input:valid + label span {
+.input input:focus+label span, .input input:valid+label span {
   transform: translateY(-40%);
   font-size: 22px;
   color: rgba(255, 255, 255, 0.815);
 }
 
-.input textarea:focus + label span,
-.input textarea:valid + label span {
+.input textarea:focus+label span, .input textarea:valid+label span {
   transform: translateY(-40%);
   font-size: 22px;
   color: rgba(255, 255, 255, 0.815);
 }
 
-.input input:focus + label::after,
-.input input:valid + label::after {
+.input input:focus+label::after, .input input:valid+label::after {
   transform: translateX(0);
 }
 
-.input textarea:focus + label::after,
-.input textarea:valid + label::after {
+.input textarea:focus+label::after, .input textarea:valid+label::after {
   transform: translateX(0);
 }
 
@@ -369,6 +353,7 @@ textarea {
 }
 
 /*iPad Pro*/
+
 @media screen and (max-width: 1024px) {
   .contact-image {
     width: 100%;
@@ -422,7 +407,6 @@ textarea {
     margin-right: 30px;
     cursor: pointer;
   }
-
   .contact-column1 {
     display: flex;
     flex-direction: column;
@@ -472,6 +456,8 @@ textarea {
 @media screen and (max-width: 450px) {
   .nav-bar {
     top: 50px;
+    width: 100vw;
+    background-color: #f8e0fddc;
   }
   .nav-socials a {
     width: 30px;
