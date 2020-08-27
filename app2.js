@@ -24,3 +24,28 @@ const navSlide = () => {
 };
 
 navSlide();
+
+/*Fixed nav-bar*/
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function () {
+  myFunction();
+};
+
+// Get the header
+var header = document.getElementById("header");
+var intro = document.getElementById("intro");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+    //document.body.style.paddingTop = header.offsetHeight + "px";
+  } else {
+    header.classList.remove("sticky");
+    //document.body.style.paddingTop = 0;
+  }
+}
